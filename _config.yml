@@ -1,101 +1,57 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+layout: sidebar
+style: light
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: "Hello. I'm Elijah Simmons."
-email: 'elijahsimmons85@icloud.com'
-description: "I'm a young aspiring developer from Texas."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://elijahsimmons85.github.io" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'jamigibbs'
-github_username: 'jamigibbs'
-medium_username: 'blog.jamigibbs.com'
-
-# Build settings
-markdown: kramdown
-# theme: phantom # Uncomment once published to RubyGems
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
 
-############################################################
-# Site configuration for the Jekyll 3 Pagination Gem
-# The values here represent the defaults if nothing is set
-pagination:
-  
-  # Site-wide kill switch, disabled here it doesn't run at all 
-  enabled: true
+permalink: /:year/:month/:day/:title/
 
-  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: false
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
 
-  # The default document collection to paginate if nothing is specified ('posts' is default)
-  collection: 'posts'
+projects:
+  sort_by: pushed
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 9
+  exclude:
+    archived: false
+    forks: true
+    projects:
+    # - repo-name
 
-  # How many objects per paginated page, used to be `paginate` (default: 0, means all)
-  per_page: 10
+ social_media:
+  # behance: your_username
+  # dribbble: your_username
+  # facebook: your_username
+  # hackerrank: your_username
+   instagram: eli_rays
+  # keybase: your_username
+  # linkedin: your_username
+  # mastodon: your_username
+  # medium: your_username
+  # stackoverflow: your_user_id
+  # telegram: your_username
+   twitter: elijahsimmons85
+  # unsplash: your_username
+  # vk: your_username
+  # website: http://your_website_url
+  # youtube: your_username
 
-  # The permalink structure for the paginated pages (this can be any level deep)
-  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  #permalink: '/page/:num.html' # Pages are simple html files 
-  #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+topics:
+  - name: CSS
+    web_url: https://github.com/topics/css
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-  # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
-  title: ':title - page :num'
-
-  # Limit how many pagenated pages to create (default: 0, means all)
-  limit: 0
-  
-  # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
-  sort_field: 'date'
-
-  # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
-  sort_reverse: true
-
-  # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
-  category: 'posts'
-
-  # Optional, the default tag to use, omit to disable
-  tag: ''
-
-  # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
-  # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
-  locale: '' 
-
- # Optional,omit or set both before and after to zero to disable. 
- # Controls how the pagination trail for the paginated pages look like. 
-  trail: 
-    before: 2
-    after: 2
-
-  # Optional, the default file extension for generated pages (e.g html, json, xml).
-  # Internally this is set to html by default
-  extension: html
-
-  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
-  # Without file extension
-  indexpage: 'index'
-
-############################################################
-
-### Phantom settings
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
-enable_contact: false
-
-#### Phantom Navigation menu
-enable_nav: true
-nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
+  - name: Gaming lol
+  - name: Sass
+    web_url: https://github.com/topics/sass
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png

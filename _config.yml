@@ -26,32 +26,19 @@ projects:
     archived: false
     forks: true
     projects:
-    # - repo-name
-
+      - elijahsimmons85.github.io
+      
  social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
+
    instagram: eli_rays
-  # keybase: your_username
-  # linkedin: your_username
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
    twitter: elijahsimmons85
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
 
 topics:
   - name: CSS
     web_url: https://github.com/topics/css
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-  - name: Gaming lol
+  - name: Gaming
   - name: Sass
     web_url: https://github.com/topics/sass
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png

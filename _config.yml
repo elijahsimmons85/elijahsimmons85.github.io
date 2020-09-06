@@ -1,5 +1,5 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -14,7 +14,7 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
-      layout: "post"
+      layout: "home"
 
 projects:
   sort_by: pushed
@@ -26,25 +26,25 @@ projects:
     archived: false
     forks: true
     projects:
-    # - repo-name
+      #- elijahsimmons85.github.io
 
-# social_media:
+social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
-  # instagram: your_username
+  instagram: eli_rays
   # keybase: your_username
   # linkedin: your_username
   # mastodon: your_username
   # medium: your_username
   # stackoverflow: your_user_id
   # telegram: your_username
-  # twitter: your_username
+  twitter: elijahsimmons85
   # unsplash: your_username
   # vk: your_username
   # website: http://your_website_url
-  # youtube: your_username
+  youtube: UCwYPNpCDRZ_neWIWi4xcJTQ
 
 topics:
   - name: CSS

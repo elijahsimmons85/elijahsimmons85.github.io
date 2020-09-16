@@ -76,9 +76,10 @@ a:visited{
 .socialIcon:hover{
     cursor: pointer;
     color:var(--link-highlight-color);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .circleImg{
+    box-shadow: 0px 0px 25px 9px var(--container-border-color);
     display: inline-block
     
 }
@@ -86,7 +87,7 @@ a:visited{
     filter: grayscale(100%);
 }
 .smallImg{
-    box-shadow: 0px 0px 50px -5px var(--container-border-color);
+    box-shadow: 0px 0px 25px 9px var(--container-border-color);
     border-radius: 50%;
     transition: all 1s ease 0s;
     width: 250px;
@@ -100,7 +101,7 @@ a:visited{
 }
 @media (max-width: 800px) {
     .profile{
-
+        margin-top: 150px;
 
         display: grid;
         grid-template-areas:
@@ -114,6 +115,7 @@ a:visited{
   }
   @media (min-width: 800px) {
     .profile{
+        margin-top: 150px;
         min-width: 900px;
         display: grid;
         grid-template-areas:
@@ -122,7 +124,6 @@ a:visited{
             grid-template-columns: minmax(100px, 500px) minmax(100px, 1200px);
             grid-template-rows: 3fr 1fr;
         grid-area: auto;
-        gridc
         grid-gap: 100px;
     }
   }
@@ -134,8 +135,6 @@ a:visited{
 }
 .profile h1{
     font-weight: 700;
-
-    transition: all 3s ease 0s;
 }
 .profile p{
     color: var(--text-color);
@@ -145,22 +144,22 @@ a:visited{
     text-decoration: none;
     color: var(--link-highlight-color);
 }
-.profile a:hover{
-    font-size: 20px;
-}
+
 .profile h1:hover{
     cursor: default;
-    transform: scale(1.1);
-    color: var(--link-highlight-color);
 }
 .centered{
-    margin: 1rem auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 header{
-    
+    z-index: 999;
+    position: fixed;
+    top: -1em;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: 0 3%;
+    padding: 20 0%;
     border: var(--container-border-color) 1px solid;
     background-color: var(--navbar-color);
     box-shadow: 0px 0px 25px 0px var(--container-border-color);
@@ -233,4 +232,21 @@ header{
 
       transform: translateX(0);
     }
+  }
+  /* width */
+::-webkit-scrollbar {
+    background-color: var(--background-color);
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--container-color);
+    border-radius: 10px;
   }

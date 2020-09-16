@@ -110,7 +110,7 @@ a:visited{
             'pText'
             'Social';
             
-            grid-template-rows: 3fr 6fr 1fr;
+            grid-template-rows: 2fr 3fr 1fr;
         grid-gap: 0px;
     }
     header{
@@ -133,7 +133,7 @@ a:visited{
         transform: translateX(-30%);
         display: inline-flex;
         align-self: center;
-        padding: 30px 25px ;
+        padding: 30px 15px ;
     }
     .nav-links ul{
         align-content: center;

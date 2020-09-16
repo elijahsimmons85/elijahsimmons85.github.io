@@ -133,7 +133,7 @@ a:visited{
         transform: translateX(-30%);
         display: inline-flex;
         align-self: center;
-        padding: 30px 15px ;
+        padding: 30px 10px ;
     }
     .nav-links ul{
         align-content: center;

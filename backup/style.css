@@ -99,8 +99,7 @@ a:visited{
     width: 250px;
     height: 250px;
 }
-
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     .profile{
         margin-top: 100px;
 
@@ -110,10 +109,11 @@ a:visited{
             'pText'
             'Social';
             
-            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-rows: 2fr 3fr 1fr;
         grid-gap: 0px;
     }
     header{
+        overflow: hidden;
         z-index: 999;
         position: fixed;
         top: -2em;
@@ -121,29 +121,23 @@ a:visited{
         height: 100px;
         display: flex;
         justify-content: center;
-        padding: 20 0%;
+        padding: 0% 0%;
         border: var(--container-border-color) 1px solid;
         background-color: var(--navbar-color);
         box-shadow: 0px 0px 25px 0px var(--container-border-color);
     
-        /* This section calls the slideInFromLeft animation we defined above */
-        
-      
-      
     }
   }
-  @media (min-width: 950px) {
+  @media (min-width: 1000px) {
     .profile{
         margin-top: 100px;
         min-width: 900px;
-
         display: grid;
         grid-template-areas:
             'Side pText'
             'Side Social';
             grid-template-columns: minmax(100px, 500px) minmax(100px, 1200px);
             grid-template-rows: 3fr 1fr;
-            grid-template-rows: 5fr 1fr ;
         grid-area: auto;
         grid-gap: 100px;
     }
@@ -152,21 +146,24 @@ a:visited{
         position: fixed;
         top: -2em;
         width: 100vw;
-        height: 100px;
+
         display: flex;
         justify-content: space-between;
-        padding: 20 0%;
+        padding: 20px 0%;
         border: var(--container-border-color) 1px solid;
         background-color: var(--navbar-color);
         box-shadow: 0px 0px 25px 0px var(--container-border-color);
     
-        /* This section calls the slideInFromLeft animation we defined above */
-        
-      
-      
     }
   }
+header a{
+    transition: all 1s ease 0s;
+    color: var(--link-highlight-color);
 
+}
+header a:hover{
+    transform: scale(1.2);
+}
 .Profile-item2 p{ /*Main Text*/
     font-size: 24px;
     overflow: auto;
@@ -205,20 +202,23 @@ a:visited{
     list-style: none;
 }
 .nav-links li{
-    display: inline-flex;
-    padding: 30px 50px ;
+    display: inline-block;
+    padding: 30px 50px;
+    transition: all 0.25s ease 0s;
+
+}
+.nav-links li:hover{
 }
 .nav-links li a{
     margin-right: auto;
     font-size: 25px;
     font-weight: bold;
-    transition: all 0.25s ease 0s;
     text-decoration: none;
     color: var(--text-color);
 }
 .nav-links li a:hover{
-    transform: scale(1.3);
     color: var(--link-highlight-color);
+    transform: scale(1.3);
 }
 .logo {
     cursor: default;
@@ -236,7 +236,7 @@ a:visited{
     0% {
         opacity: 0%;
         fill-opacity: 0;
-      transform: translateX(-100%);
+      transform: translateY(100%);
     }
     100% {
         opacity: 100%;
@@ -256,13 +256,6 @@ a:visited{
       transform: translateX(0);
     }
   }
-  .offset{
-    margin-top:0px;
-   }
-.project{
-    margin-top: 50px;
-    height: 500px;
-}
   /* width */
 ::-webkit-scrollbar {
     background-color: var(--background-color);

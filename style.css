@@ -15,11 +15,27 @@
     --link-highlight-color: rgb(252, 65, 32);
 
     --java-color: rgb(252, 65, 32);
-    --csharp-color: rgb(252, 65, 32);
-    --js-color: rgb(252, 65, 32);
-    --css-color: rgb(252, 65, 32);
+    --csharp-color: rgb(147, 88, 175);
+    --js-color: rgb(252, 138, 32);
+    --css-color: rgb(56, 154, 211);
 
     
+}
+.jvColor{
+    font-size: 28px;
+    color: var(--java-color);
+}
+.cshColor{
+    font-size: 28px;
+    color: var(--csharp-color);
+}
+.jsColor{
+    font-size: 28px;
+    color: var(--js-color);
+}
+.cssColor{
+    font-size: 28px;
+    color: var(--css-color);
 }
 
 body{
@@ -134,6 +150,7 @@ a:visited{
         display: inline-flex;
         align-self: center;
         padding: 30px 10px ;
+        margin: 0;
     }
     .nav-links ul{
         align-content: center;
@@ -150,7 +167,7 @@ a:visited{
             'Side Social';
             grid-template-columns: minmax(100px, 500px) minmax(100px, 1200px);
             grid-template-rows: 3fr 1fr;
-            grid-template-rows: 5fr 1fr ;
+            grid-template-rows: 3fr 1fr ;
         grid-area: auto;
         grid-gap: 100px;
     }
@@ -169,13 +186,13 @@ a:visited{
     }
     .nav-links li{
         display: inline-flex;
-        padding: 30px 40px ;
+        padding: 30px 60px ;
     }
     
   }
 
 .Profile-item2 p{ /*Main Text*/
-    font-size: 24px;
+    font-size: 26px;
     overflow: auto;
     justify-content: center;
 }

@@ -3,13 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-          rel="stylesheet"
-        />
         <title>Elijah Simmons Portfolio</title>
         <script src="https://kit.fontawesome.com/5cd93e2baa.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
       </head>
       <body class="offset">
           <header class="slideFromTop">
@@ -17,22 +15,26 @@
               <nav>
                 
                 <ul class="nav-links">
-                    <li> <a href="#">Projects</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Other</a></li>
+                    <li> <a href="#" id="plist">Projects</a></li>
+                    <li> <a href="#" id="aboutNav">About</a></li>
+                    <li> <a href="#">Contact</a></li>
                 </ul>
               </nav>
           </header>
-        <div class=" centered profile container  slideFromBottom" id="prof">
+        <div class=" centered profile container  slideFromBottom" id="about">
             <div class="Profile-item1">
                 <img src="avatar.png" alt="profilePicture" class="circleImg smallImg greyscale">
                 <h1>I'm Elijah Simmons</h1>
                 <p>a high school senior from <a href="https://www.nisd.net/clark">Texas.</a></p>
             </div>
             <div class="Profile-item2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a mi ac mauris posuere ultrices ac a metus. Sed pharetra, velit vitae suscipit ultrices, mauris ante scelerisque justo, lobortis pretium justo lectus id nunc. Nam mattis tellus at sem sagittis, et rhoncus erat ultrices. Sed iaculis massa sit amet mauris bibendum ultricies. Curabitur venenatis, nibh et convallis vulputate, leo eros luctus sem, ut feugiat dolor purus aliquam ligula. Praesent elit velit, ullamcorper quis fermentum id, malesuada vel orci. 
-                  Aliquam erat volutpat. In imperdiet eu massa id rhoncus. Donec in enim rutrum, interdum nisl eget, ultricies odio. Suspendisse potenti. Morbi eu leo vulputate, molestie ligula eget, accumsan magna. Nam sit amet mauris mattis, vulputate magna eu, tincidunt odio. Cras a ullamcorper tellus, nec maximus est. Mauris et leo rhoncus mi convallis pellentesque. Nam volutpat a leo in tempus. Aenean mollis congue venenatis.
-
+                <p>
+                  I'm an aspiring developer from Texas. I've been teaching myself to code for 5 years, making lots of
+                  personal projects in that time. I'm most experienced with <span class="jvColor">Java</span> and 
+                  <span class="cshColor">C#</span>; most of my projects were written in one of those two lanuages. I'm also experienced
+                  innhbj  front-end development, primarily with <span class="cssColor">CSS</span> and 
+                  <span class="jsColor">JavaScript</span>. When I'm not working on the computer, I enjoy playing 
+                  classical guitar and riding my bike.
                 </p>
             </div>
             <div class="Profile-item3">
@@ -43,7 +45,7 @@
               <a href="https://discord.gg/XmwEgae"><i class="fab fa-discord socialIcon"></i></a>
             </div>
         </div>
-        <div class=" centered project container  slideFromBottomSlow">
+        <div class=" centered project container  slideFromBottomSlow"  id="proj">
           project goes here
         </div>
 

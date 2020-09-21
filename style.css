@@ -64,6 +64,51 @@ a:visited{
     box-shadow: 0px 0px 45px -5px var(--container-border-color);
 
 }
+.pImage{
+    box-shadow: 0px 0px 25px 9px var(--container-border-color);
+    border-radius: 5px;
+    max-width: 100%;
+}
+.projectImage{
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    grid-area: Image;
+    display: block;
+    align-content: center;
+}
+.projectText{
+    grid-area: Text;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+.projectText p{
+    color: var(--text-color);
+    font-size: 26px;
+    overflow: auto;
+}
+.projectText h1{
+    font-size: 36px;
+}
+.projectButton{
+    transition: all 0.25s ease 0s;
+    background-color: var(--container-color);
+    border-color:  var(--container-border-color);
+    border-width: 2px;
+    box-shadow: 0px 0px 15px 0px var(--container-border-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 26px;
+    padding: 1%;
+}
+.projectButton:hover{
+    background-color: var(--container-color);
+    border-color:  var(--container-border-color);
+    color: var(--link-highlight-color);
+    transform: scale(1.02);
+    cursor: pointer;
+}
 .Profile-item1 {/*SideBar*/
      grid-area: Side; 
      text-align: center;
@@ -129,6 +174,30 @@ a:visited{
             grid-template-rows: 2fr 3fr 1fr;
         grid-gap: 0px;
     }
+    .projectLeft{
+        margin-top: 50px;
+        padding: 30px;
+
+        display: grid;
+        grid-template-areas:
+            
+            'Text';
+        grid-area: auto;
+        grid-gap: 0px;
+    }
+    .projectRight{
+        margin-top: 50px;
+        padding: 30px;
+
+        display: grid;
+        grid-template-areas:
+            'Text';
+        grid-area: auto;
+        grid-gap: 0px;
+    }
+    .pImage{
+        display: none;
+    }
     header{
         z-index: 999;
         position: fixed;
@@ -168,6 +237,30 @@ a:visited{
             grid-template-columns: minmax(100px, 500px) minmax(100px, 1200px);
             grid-template-rows: 3fr 1fr;
             grid-template-rows: 3fr 1fr ;
+        grid-area: auto;
+        grid-gap: 100px;
+    }
+    .projectLeft{
+        margin-top: 50px;
+        padding: 30px;
+        min-width: 900px;
+
+        display: grid;
+        grid-template-areas:
+            'Image Text';
+            grid-template-columns: 3fr 5fr;
+        grid-area: auto;
+        grid-gap: 100px;
+    }
+    .projectRight{
+        margin-top: 50px;
+        padding: 30px;
+        min-width: 900px;
+
+        display: grid;
+        grid-template-areas:
+            'Text Image';
+            grid-template-columns: 5fr 3fr;
         grid-area: auto;
         grid-gap: 100px;
     }

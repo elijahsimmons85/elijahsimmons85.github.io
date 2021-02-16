@@ -1,4 +1,3 @@
 ### Thanks for checking out my personal website/portfolio
 
-This website was made using the personal-website template
-You can get it [here](https://github.com/github/personal-website).
+This website was made entirely by me, but you're welcome to use any of it for your own projects (don't think you would want to though)
